@@ -24,6 +24,7 @@ public class playerScript : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        Time.timeScale = 1f;
     }
 
     private void Update()

@@ -14,6 +14,7 @@ public class SceneTransporter : MonoBehaviour
     public void loadPlayScene()
     {
         SceneManager.LoadScene("SampleScene");
+
     }
     public void load2Scene()
     {
