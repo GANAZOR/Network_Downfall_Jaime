@@ -11,7 +11,8 @@ public class autodestruction : MonoBehaviour
 
     IEnumerator Destroythis()
     {
-        yield return new WaitForSeconds(4);
-        Destroy(this);
+        yield return new WaitForSeconds(7);
+        //Debug.Log("nashe");
+        Destroy(gameObject);
     }
 }
