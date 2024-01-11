@@ -20,6 +20,12 @@ public class playerScript : MonoBehaviour
 
     bool playerCanJump = true;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     private void Update()
     {
         float moveX = Input.GetAxis("Horizontal");
