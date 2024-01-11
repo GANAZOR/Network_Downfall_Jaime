@@ -16,14 +16,17 @@ public class MenuinGame : MonoBehaviour
 
             pantallaPausa.SetActive(pauseOn);
 
-            Cursor.visible = pauseOn;
 
             if (pauseOn)
             {
+                Time.timeScale = 0f;
+                Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
             else
             {
+                Time.timeScale = 1f;
+                Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
         }
